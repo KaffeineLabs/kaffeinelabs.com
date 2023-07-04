@@ -1,44 +1,109 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
     <title>Kaffeine Labs | Agile Software Development | Consultancy | Training</title>
-    <meta name="description" content="Kaffeine Labs is a professional IT services company focused on high quality sustainable software delivery and training. Experienced in delivering projects for both public sector organisations and startups.">
-    <meta name="keywords" content="java,php,scala,symfony,cucumber,junit,scalatest,behat,phpspec,clean,code,architecture,solid,tdd,bdd,ddd,test,behaviour,behavior">
+    <meta name="description"
+          content="Kaffeine Labs is a professional IT services company focused on high quality sustainable software delivery and training. Experienced in delivering projects for both public sector organisations and startups.">
+    <meta name="keywords"
+          content="java,php,scala,symfony,cucumber,junit,scalatest,behat,phpspec,clean,code,architecture,solid,tdd,bdd,ddd,test,behaviour,behavior">
     <meta name="author" content="Jakub Zalas">
+
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
     <link rel="manifest" href="favicons/site.webmanifest">
-    <link rel="stylesheet" type="text/css" href="/reset.css">
-    <style type="text/css">
-        body { max-width: 700px; margin-left: auto; margin-right: auto; color: #2f2125; font-family:'Sailec W05 Regular';}
-        strong { font-weight: bold; }
-        #company-details { padding: 2em; }
-        .company-address { font-size: 0.6em; border-top: 2px solid #09593d; padding-top: 1em;}
-        #logo { display: block; margin-bottom: 3em; width: auto; max-width: 220px;}
-    </style>
-    <style type="text/css">
-        @font-face{
-            font-family:"Sailec W05 Regular";
-            src:url("fonts/5472499/cc23f21f-a562-4b85-9e13-658780b066ef.eot?#iefix");
-            src:url("fonts/5472499/cc23f21f-a562-4b85-9e13-658780b066ef.eot?#iefix") format("eot"),url("fonts/5472499/22771bcc-8fbd-411f-b730-9a43197afb95.woff2") format("woff2"),url("fonts/5472499/0610e07b-93ea-4f1f-b469-1a2a02398b58.woff") format("woff"),url("fonts/5472499/62fd0cec-2b66-4652-a323-5c996874386f.ttf") format("truetype");
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: "Sailec W05 Regular";
+            src: url("fonts/5472499/cc23f21f-a562-4b85-9e13-658780b066ef.eot?#iefix");
+            src: url("fonts/5472499/cc23f21f-a562-4b85-9e13-658780b066ef.eot?#iefix") format("eot"), url("fonts/5472499/22771bcc-8fbd-411f-b730-9a43197afb95.woff2") format("woff2"), url("fonts/5472499/0610e07b-93ea-4f1f-b469-1a2a02398b58.woff") format("woff"), url("fonts/5472499/62fd0cec-2b66-4652-a323-5c996874386f.ttf") format("truetype");
         }
-        @font-face{
-            font-family:"Sailec W05 Bold";
-            src:url("fonts/5472515/13469824-539d-4246-850c-0088a2772e0a.eot?#iefix");
-            src:url("fonts/5472515/13469824-539d-4246-850c-0088a2772e0a.eot?#iefix") format("eot"),url("fonts/5472515/edec1a94-e2a6-4e33-ada9-743e2b241fbb.woff2") format("woff2"),url("fonts/5472515/aa19e7c7-176b-4241-b77b-aeab4fa42f7e.woff") format("woff"),url("fonts/5472515/f4999595-c4b4-4928-8a49-887524aa1b76.ttf") format("truetype");
+
+        @font-face {
+            font-family: "Sailec W05 Bold";
+            src: url("fonts/5472515/13469824-539d-4246-850c-0088a2772e0a.eot?#iefix");
+            src: url("fonts/5472515/13469824-539d-4246-850c-0088a2772e0a.eot?#iefix") format("eot"), url("fonts/5472515/edec1a94-e2a6-4e33-ada9-743e2b241fbb.woff2") format("woff2"), url("fonts/5472515/aa19e7c7-176b-4241-b77b-aeab4fa42f7e.woff") format("woff"), url("fonts/5472515/f4999595-c4b4-4928-8a49-887524aa1b76.ttf") format("truetype");
         }
     </style>
+
+    <link href="vendor/aos/aos.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
-<div id="company-details">
-    <img src="kaffeinelabs.png" alt="Kaffeine Labs" id="logo" />
-    <div class="company-address">
-        <strong>Kaffeine Labs Ltd</strong><br />
-        Registered in England and Wales under company number 9443242<br />
-        Registered office: The Knoll Business Centre, Unit W8A, 325-327 Old Shoreham Road, Hove BN3 7GS<br />
+<header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+        <div class="logo">
+            <a href="index.html"><img src="kaffeinelabs.png" alt="Kaffeine Labs" class="img-fluid"></a>
+        </div>
     </div>
-</div>
+</header>
+
+<section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                <h1 data-aos="fade-up">Software development</h1>
+                <h2 data-aos="fade-up" data-aos-delay="400">Consultancy and training</h2>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
+                <img src="images/hero-img.png" class="img-fluid animated" alt="">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<main id="main">
+
+</main>
+
+<footer id="footer">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-lg-6 text-lg-left text-center">
+                <div class="company-address">
+                    &copy; <strong>Kaffeine Labs Ltd</strong>
+                    <div class="registration-details">
+                    Registered in England and Wales under company number 9443242<br />
+                    Registered office: The Knoll Business Centre, Unit W8A, 325-327 Old Shoreham Road, Hove BN3 7GS<br />
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<script src="vendor/aos/aos.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/glightbox/js/glightbox.min.js"></script>
+<script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="vendor/swiper/swiper-bundle.min.js"></script>
+
+<script src="js/main.js"></script>
+
 </body>
 </html>
